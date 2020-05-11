@@ -6,8 +6,10 @@
 // LICENSE file in the root directory of this source tree. An additional grant
 // of patent rights can be found in the PATENTS file in the same directory.
 //
-
+#if SWIFT_PACKAGE
+#import "NSRunLoop+SRWebSocket.h"
+#else
 #import <SocketRocket/NSRunLoop+SRWebSocket.h>
-
+#endif
 // Empty function that force links the object file for the category.
 extern void import_NSRunLoop_SRWebSocket(void);

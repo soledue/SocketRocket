@@ -10,8 +10,9 @@
 //
 
 #import "NSRunLoop+SRWebSocket.h"
+#if !SWIFT_PACKAGE
 #import "NSRunLoop+SRWebSocketPrivate.h"
-
+#endif
 #import "SRRunLoopThread.h"
 
 // Required for object file to always be linked.
